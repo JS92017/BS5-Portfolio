@@ -10,10 +10,16 @@
     <script src="js/bootstrap.bundle.min.js"></script>
 
     <title>Portfolio Website</title>
-    <style></style>
+    <style>
+      /* CSS 필요시 */
+      .active {
+        color: rgb(211, 84, 84) !important;
+      }
+    </style>
   </head>
-  <body>
-    <!-- 네브바 -->
+  <!-- data-bs-spy="scroll" data-bs-target="#nav-scroll" 자바스크립트로 하는 방법도 있음. -->
+  <body data-bs-spy="scroll" data-bs-target="#nav-scroll">
+    <!-- 네브바 시작 -->
     <nav
       class="navbar navbar-expand-md navbar-light bg-light fixed-top"
       id="nav-scroll"
@@ -38,7 +44,7 @@
               <a href="#about" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a href="#portfolio" class="nav-link">Porftfolio</a>
+              <a href="#portfolio" class="nav-link">Porftolio</a>
             </li>
             <li class="nav-item">
               <a href="#blog" class="nav-link">Blog</a>
@@ -264,5 +270,20 @@
       </div>
     </section>
     <!-- 컨택트 섹션 끝 -->
+    <!-- 푸터 섹션 시작 -->
+    <footer class="bg-light">
+      <div class="container text-center">
+        <p class="mb-0 py-3 fs-5">
+          © 2024 부산IT교육센터 All rights reserved.
+          <a
+            href="#본인블로그주소"
+            class="text-danger fst-italic"
+            target="_blank"
+            >MyBlog</a
+          >
+        </p>
+      </div>
+    </footer>
+    <!-- 푸터 섹션 끝 -->
   </body>
 </html>
